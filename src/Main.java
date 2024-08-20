@@ -1,4 +1,6 @@
 //Kevin Andres Corredor Moreno
+//Ejercicio Alcancia
+//20 de agosto de 2024
 import java.util.Scanner;
 
 public class Main {
