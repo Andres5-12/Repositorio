@@ -1,3 +1,4 @@
+//Kevin Andres Corredor Moreno
 import java.util.Scanner;
 
 public class Main {
@@ -11,20 +12,19 @@ public class Main {
         int contadorV = 0;
         int opciones;
         int pregunta;
-        System.out.println("presione 1 para agregar monedas \npresione 2 para contar cuantas monedas tiene de cada una");
-        System.out.println("presione 3 para calcular el total del dinero ahorrado \npresione 4 para romper la alcancia");
-        opciones = teclado.nextInt();
-
         do {
+            System.out.println("presione 1 para agregar monedas \npresione 2 para contar cuantas monedas tiene de cada una");
+            System.out.println("presione 3 para calcular el total del dinero ahorrado \npresione 4 para romper la alcancia");
+            opciones = teclado.nextInt();
             switch (opciones) {
                 case 1:
                     System.out.println("Seleccione el valor de la moneda");
+                    System.out.println("las moneadas que se pueden agregar son: 20, 50, 100, 200, 500");
                     pregunta = teclado2.nextInt();
                     if (pregunta == 20) {
                         System.out.println("usted metio una moneda de 20");
-                        System.out.println("ya1");
-
-
+                        contadorM++;
+                        contadorV += 20;
                     }
                     else if (pregunta == 50) {
                         contadorM++;
@@ -58,8 +58,6 @@ public class Main {
             }
 
         }while (opciones!=4);
-
-
     }
 }
 
